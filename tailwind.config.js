@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       fontFamily:{
         lemonMilk: "'Lemon/Milk', sans-serif",
-        hughs: "'Hughs', sans-serif"
+        alex: "'Alex Brush', cursive;"
       },
       colors:{
         heading1: "#059142",

@@ -7,6 +7,9 @@ import "swiper/css/navigation";
 
 import { Pagination, Navigation } from "swiper";
 
+import uniform1 from '../assets/uniform1.png'
+import book1 from '../assets/book1.png'
+
 const SwiperTest = () => {
   return (
     <>
@@ -24,47 +27,47 @@ const SwiperTest = () => {
       >
         <SwiperSlide>
           <div className="w-[300px] h-[400px] bg-white border-2 border-black flex justify-center items-center">
-            <h1 className="text-5xl text-black">1</h1>
+            <img src={uniform1} alt="../assets/uniform1.png" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="w-[300px] h-[400px] bg-white border-2 border-black flex justify-center items-center">
-            <h1 className="text-5xl text-black">2</h1>
+          <img src={book1} alt="../assets/book1.png" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="w-[300px] h-[400px] bg-white border-2 border-black flex justify-center items-center">
-            <h1 className="text-5xl text-black">3</h1>
+          <img src={uniform1} alt="../assets/uniform1.png" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="w-[300px] h-[400px] bg-white border-2 border-black flex justify-center items-center">
-            <h1 className="text-5xl text-black">4</h1>
+          <img src={book1} alt="../assets/book1.png" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="w-[300px] h-[400px] bg-white border-2 border-black flex justify-center items-center">
-            <h1 className="text-5xl text-black">5</h1>
+          <img src={uniform1} alt="../assets/uniform1.png" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="w-[300px] h-[400px] bg-white border-2 border-black flex justify-center items-center">
-            <h1 className="text-5xl text-black">6</h1>
+          <img src={book1} alt="../assets/book1.png" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="w-[300px] h-[400px] bg-white border-2 border-black flex justify-center items-center">
-            <h1 className="text-5xl text-black">7</h1>
+          <img src={uniform1} alt="../assets/uniform1.png" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="w-[300px] h-[400px] bg-white border-2 border-black flex justify-center items-center">
-            <h1 className="text-5xl text-black">8</h1>
+          <img src={book1} alt="../assets/book1.png" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="w-[300px] h-[400px] bg-white border-2 border-black flex justify-center items-center">
-            <h1 className="text-5xl text-black">9</h1>
+          <img src={uniform1} alt="../assets/uniform1.png" />
           </div>
         </SwiperSlide>
       </Swiper>

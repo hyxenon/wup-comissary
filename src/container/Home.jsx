@@ -7,18 +7,19 @@ import {
   Navbar,
   SideLinks,
 } from "../components";
-import heroImg from "../assets/header.jpg";
-import background1 from "../assets/backgroundAbout.png";
-import backgroundBestSellers from "../assets/backgroundBestSellers.png";
+
+import heroImg1 from "../assets/header1.png";
+import background1 from "../assets/background1.png";
+import background2 from "../assets/background2.png";
 
 const Home = () => {
   return (
     <div className="h-full relative">
       {/* Hero Image */}
       <img
-        className="h-screen w-screen -z-20 absolute opacity-40 object-cover"
-        src={heroImg}
-        alt=""
+        className="h-screen w-screen -z-20 absolute object-cover"
+        src={heroImg1}
+        alt="../assets/header1.png"
       />
       <Navbar />
       <SideLinks />
@@ -30,7 +31,7 @@ const Home = () => {
         />
         <img
           className="absolute -bottom-20 -z-20"
-          src={backgroundBestSellers}
+          src={background2}
           alt=""
         />
         <Hero />
