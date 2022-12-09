@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/wup-comissary/static/css/main.c148e965.css",
-    "main.js": "/wup-comissary/static/js/main.5ba1c03c.js",
+    "main.css": "/wup-comissary/static/css/main.9c695c0c.css",
+    "main.js": "/wup-comissary/static/js/main.7e504118.js",
     "static/media/header1.png": "/wup-comissary/static/media/header1.193a8e49044e12e104c2.png",
     "static/media/uniform1.png": "/wup-comissary/static/media/uniform1.65e2bad90976dec7eca1.png",
     "static/media/book1.png": "/wup-comissary/static/media/book1.6f198e03506c4401a39c.png",
@@ -9,15 +9,16 @@
     "static/media/background2.png": "/wup-comissary/static/media/background2.51c0d65757d34ee063a5.png",
     "static/media/logo2.png": "/wup-comissary/static/media/logo2.531ebcec023d421e2dc9.png",
     "static/media/wesleyanLogo.png": "/wup-comissary/static/media/wesleyanLogo.d16f83ecae6f61fc565d.png",
+    "static/media/menspolo.jpg": "/wup-comissary/static/media/menspolo.9a3b2e90e2046fcd7822.jpg",
     "static/media/tracking.jpg": "/wup-comissary/static/media/tracking.ce80cf53c8bf244233d8.jpg",
     "static/media/shape2.png": "/wup-comissary/static/media/shape2.0cc0d7bb47e55afbf839.png",
     "static/media/shape1.png": "/wup-comissary/static/media/shape1.e05e27493c0048eb867b.png",
     "index.html": "/wup-comissary/index.html",
-    "main.c148e965.css.map": "/wup-comissary/static/css/main.c148e965.css.map",
-    "main.5ba1c03c.js.map": "/wup-comissary/static/js/main.5ba1c03c.js.map"
+    "main.9c695c0c.css.map": "/wup-comissary/static/css/main.9c695c0c.css.map",
+    "main.7e504118.js.map": "/wup-comissary/static/js/main.7e504118.js.map"
   },
   "entrypoints": [
-    "static/css/main.c148e965.css",
-    "static/js/main.5ba1c03c.js"
+    "static/css/main.9c695c0c.css",
+    "static/js/main.7e504118.js"
   ]
 }
