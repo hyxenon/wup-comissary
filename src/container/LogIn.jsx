@@ -7,7 +7,7 @@ import logo2 from "../assets/logo2.png";
 const LogIn = () => {
   return (
     <div className="h-screen">
-      <Navbar />
+      <Navbar page={'login'}/>
       <SideLinks />
       <img
         className="absolute right-0 -top-[19rem] w-[1800px] object-cover -z-10"
@@ -19,8 +19,8 @@ const LogIn = () => {
         src={background2}
         alt="../assets/background2.png"
       />
-      <main className="flex justify-center items-center mt-28">
-        <div className="flex w-[60rem] h-[40rem] border bg-white box-shadow filter drop-shadow-2xl rounded-xl relative overflow-hidden">
+      <main className="flex justify-center items-center mt-10 3xl:mt-28">
+        <div className="flex w-[50rem] 3xl:w-[60rem] h-[40rem] border bg-white box-shadow filter drop-shadow-2xl rounded-xl relative overflow-hidden">
           <img
             className="absolute bottom-0 -left-20 w-5/6 -z-10 opacity-60"
             src={logo2}
@@ -51,7 +51,7 @@ const LogIn = () => {
                 type="password"
               />
               <button
-                className="font-bold text-lg border-2 mx-auto mt-16 border-black px-12 py-1 rounded-xl"
+                className="font-bold text-lg border-2 mx-auto mt-16 border-black px-12 py-1 rounded-xl hover:scale-110 transition-all"
                 type="submit"
               >
                 LOGIN

@@ -25,7 +25,7 @@ const Home = () => {
       <SideLinks />
       <main className="flex flex-col relative">
         <img
-          className="absolute bottom-[60rem] w-[1700px] right-0 -z-20"
+          className="absolute bottom-[60rem] w-[1500px] right-0 -z-20"
           src={background1}
           alt="../assets/backgroundAbout.png"
         />
@@ -38,7 +38,7 @@ const Home = () => {
         <About />
         <div className="flex flex-col items-center justify-center">
           <BestSeller />
-          <div className="w-[1000px] h-[500px] mt-24">
+          <div className="w-[50rem] h-[500px] mt-24">
             <BestSellerItems />
           </div>
         </div>

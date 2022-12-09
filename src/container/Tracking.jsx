@@ -6,8 +6,8 @@ import background2 from "../assets/background2.png";
 
 const Tracking = () => {
   return (
-    <div className="overflow-hidden h-screen ">
-      <Navbar />
+    <div className="h-auto">
+      <Navbar page={'tracking'}/>
       <SideLinks />
       <img
         className="absolute top-0 -z-20"

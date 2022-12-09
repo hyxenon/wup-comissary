@@ -8,7 +8,7 @@ import book1 from '../assets/book1.png'
 const Shop = () => {
   return (
     <div className="overflow-hidden relative min-h-screen">
-      <Navbar />
+      <Navbar page={'shop'}/>
       <SideLinks />
       <img
         className="absolute left-0 -top-40 -z-20 w-[1300px]"
@@ -24,13 +24,13 @@ const Shop = () => {
         
         <div className="mt-20">
           <ul className="flex flex-col items-end gap-4">
-            <li className="font-bold uppercase cursor-pointer">Category</li>
-            <li className="font-bold uppercase cursor-pointer">Department</li>
-            <li className="font-bold uppercase cursor-pointer">Books</li>
-            <li className="font-bold uppercase cursor-pointer">Others</li>
+            <li className="font-bold uppercase cursor-pointer hover:scale-110 transition-all">Category</li>
+            <li className="font-bold uppercase cursor-pointer hover:scale-110 transition-all">Department</li>
+            <li className="font-bold uppercase cursor-pointer hover:scale-110 transition-all">Books</li>
+            <li className="font-bold uppercase cursor-pointer hover:scale-110 transition-all">Others</li>
           </ul>
         </div>
-        <div className="flex flex-col items-center gap-12 ">
+        <div className="flex flex-col items-center gap-12 mb-20 ">
           <h1 className="uppercase text-3xl font-bold">Best Sellers</h1>
           <div className="grid grid-cols-3 gap-8">
             <div className="w-[200px] h-[300px] border-2 border-black rounded-xl">
