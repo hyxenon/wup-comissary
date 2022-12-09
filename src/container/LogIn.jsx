@@ -20,7 +20,7 @@ const LogIn = () => {
         alt="../assets/background2.png"
       />
       <main className="flex justify-center items-center mt-28">
-        <div className="flex w-[60rem] h-[40rem] bg-white box-shadow filter drop-shadow-2xl rounded-xl relative overflow-hidden">
+        <div className="flex w-[60rem] h-[40rem] border bg-white box-shadow filter drop-shadow-2xl rounded-xl relative overflow-hidden">
           <img
             className="absolute bottom-0 -left-20 w-5/6 -z-10 opacity-60"
             src={logo2}
@@ -30,12 +30,32 @@ const LogIn = () => {
 
           <div className="flex flex-col mt-20 w-3/6 pl-20">
             <h1 className="font-bold mx-auto text-3xl">LOGIN</h1>
-            <form onSubmit={(e)=> e.preventDefault()} className="flex flex-col mt-16 w-full justify-center">
-              <label className="font-bold text-lg" htmlFor="username">USERNAME</label>
-              <input className="px-2 py-2 w-5/6 border-b-2 border-black outline-none" id="username" type="text" />
-              <label className="font-bold text-lg" htmlFor="password">PASSWORD</label>
-              <input className="px-2 py-2 w-5/6 border-b-2 border-black outline-none" id="password" type="password" />
-              <button className="font-bold text-lg border-2 mx-auto mt-16 border-black px-12 py-1 rounded-xl" type="submit">LOGIN</button>
+            <form
+              onSubmit={(e) => e.preventDefault()}
+              className="flex flex-col mt-16 w-full justify-center"
+            >
+              <label className="font-bold text-lg" htmlFor="username">
+                USERNAME
+              </label>
+              <input
+                className="px-2 py-2 w-5/6 border-b-2 border-black outline-none"
+                id="username"
+                type="text"
+              />
+              <label className="font-bold text-lg mt-8" htmlFor="password">
+                PASSWORD
+              </label>
+              <input
+                className="px-2 py-2 w-5/6 border-b-2 border-black outline-none"
+                id="password"
+                type="password"
+              />
+              <button
+                className="font-bold text-lg border-2 mx-auto mt-16 border-black px-12 py-1 rounded-xl"
+                type="submit"
+              >
+                LOGIN
+              </button>
             </form>
           </div>
         </div>

@@ -6,11 +6,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        lemonMilk: "'Lemon/Milk', sans-serif",
+        lemonMilk: "'lemon/milk', sans-serif",
         alex: "'Alex Brush', cursive;"
       },
       colors:{
         heading1: "#059142",
+        lightYellow: "#FFEB3B"
       }
     },
   },
