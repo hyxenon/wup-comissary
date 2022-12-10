@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Navbar, SideLinks } from "../components";
 import background1 from "../assets/background1.png";
 import background2 from "../assets/background2.png";
 import CartItem from "../components/CartItem";
 import { Link } from "react-router-dom";
+import CartContext from "../Context/CartContext";
 
 const Cart = () => {
+
+  const {cartItems} = useContext(CartContext)
+
+
+  const cartItemsElements = cartItems.map((item)=> <CartItem key={item.id} {...item}/>)
+  
   return (
     <div>
       <Navbar page={"cart"}/>
@@ -27,9 +34,8 @@ const Cart = () => {
                 <h1 className="uppercase font-bold text-3xl">your cart</h1>
               </div>
               <div className="w-full grow overflow-y-scroll">
-                <CartItem />
-                <CartItem />
-                
+                {cartItems.length === 0 ? <h1 className="text-center mt-32 font-bold text-4xl">Cart is Empty</h1> : null}
+                {cartItemsElements}
               </div>
               <div className="w-full px-8 py-8 border-y-2 border-black mt-1.5">
                 <div className="flex justify-between py-2">

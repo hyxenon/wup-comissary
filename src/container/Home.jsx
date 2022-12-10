@@ -25,7 +25,7 @@ const Home = () => {
       <SideLinks />
       <main className="flex flex-col relative">
         <img
-          className="absolute bottom-[60rem] w-[1500px] right-0 -z-20"
+          className="absolute bottom-[60rem] w-[94rem] right-0 -z-20"
           src={background1}
           alt="../assets/backgroundAbout.png"
         />

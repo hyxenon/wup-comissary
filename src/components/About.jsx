@@ -4,7 +4,7 @@ import shape1 from "../assets/shape1.png"
 import shape2 from "../assets/shape2.png"
 const About = () => {
   return (
-    <div className=' mt-20 3xl:mt-40 flex flex-col relative'>
+    <div className='mt-20 3xl:mt-40 flex flex-col relative'>
 
         <div className='flex items-center justify-center relative z-10'>
             <h1 className='text-9xl font-bold font-alex italic opacity-20 select-none'>About Us</h1>
