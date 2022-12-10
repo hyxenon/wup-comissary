@@ -19,7 +19,7 @@ const LogIn = () => {
         src={background2}
         alt="../assets/background2.png"
       />
-      <main className="flex justify-center items-center mt-10 3xl:mt-28">
+      <main className="flex justify-center items-center mt-10 3xl:mt-20">
         <div className="flex w-[50rem] 3xl:w-[60rem] h-[40rem] border bg-white box-shadow filter drop-shadow-2xl rounded-xl relative overflow-hidden">
           <img
             className="absolute bottom-0 -left-20 w-5/6 -z-10 opacity-60"

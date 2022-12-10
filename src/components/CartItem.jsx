@@ -1,5 +1,5 @@
 import React from 'react'
-import book1 from '../assets/book1.png'
+import book1 from '../assets/shop/book1.png'
 
 const CartItem = () => {
   return (
@@ -21,11 +21,11 @@ const CartItem = () => {
                         <p className='text-xs'>0</p>
                 </div>
                 <div className='flex gap-2'>
-                <i className="fa-solid fa-plus cursor-pointer"></i>
-                <i className="fa-solid fa-minus cursor-pointer"></i>
+                <i className="fa-solid fa-plus cursor-pointer transition-all hover:scale-110"></i>
+                <i className="fa-solid fa-minus cursor-pointer transition-all hover:scale-110"></i>
                 </div>
             </div>
-            <button className='w-1/2 ml-auto mt-4 py-1 bg-red-500 text-white text-xs font-bold rounded-xl' type='button'>Delete</button>
+            <button className='w-1/2 ml-auto mt-4 py-1 bg-red-500 text-white text-xs font-bold rounded-xl transition-all hover:scale-110' type='button'>Delete</button>
         </div>
     </div>
   )

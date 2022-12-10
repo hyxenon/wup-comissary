@@ -7,9 +7,9 @@ import "swiper/css/navigation";
 
 import { Navigation } from "swiper";
 
-import uniform1 from '../assets/uniform1.png'
-import book1 from '../assets/book1.png'
-import menspolo from '../assets/menspolo.jpg'
+import uniform1 from '../assets/shop/uniform1.png'
+import book1 from '../assets/shop/book1.png'
+import menspolo from '../assets/shop/menspolo.jpg'
 
 const SwiperTest = () => {
   return (
