@@ -4,7 +4,7 @@ import CartContext from '../Context/CartContext'
 
 const CartItem = ({title,price,img,category, quantity}) => {
 
-    const { deleteToCart } = useContext(CartContext)
+    const { deleteToCart, addQuantity, deleteQuantity } = useContext(CartContext)
 
   return (
     <div className='flex justify-between px-4 py-8'>
@@ -25,8 +25,8 @@ const CartItem = ({title,price,img,category, quantity}) => {
                         <p className='text-xs'>{quantity}</p>
                 </div>
                 <div className='flex gap-2'>
-                <i className="fa-solid fa-plus cursor-pointer transition-all hover:scale-110"></i>
-                <i className="fa-solid fa-minus cursor-pointer transition-all hover:scale-110"></i>
+                <i onClick={()=> addQuantity(title)} className="fa-solid fa-plus cursor-pointer transition-all hover:scale-110"></i>
+                <i onClick={()=> deleteQuantity(title,quantity)} className="fa-solid fa-minus cursor-pointer transition-all hover:scale-110"></i>
                 </div>
             </div>
             <button onClick={()=> deleteToCart(title)} className='w-1/2 ml-auto mt-4 py-1 bg-red-500 text-white text-xs font-bold rounded-xl transition-all hover:scale-110' type='button'>Delete</button>

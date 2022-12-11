@@ -3,19 +3,23 @@ import { Navbar, SideLinks } from "../components";
 import background1 from "../assets/background1.png";
 import background2 from "../assets/background2.png";
 import CartItem from "../components/CartItem";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import CartContext from "../Context/CartContext";
+import LogInContext from "../Context/LogInContext";
 
 const Cart = () => {
+  const { cartItems, totalPrice } = useContext(CartContext);
 
-  const {cartItems} = useContext(CartContext)
+  const { isLogIn  } = useContext(LogInContext);
 
+  const cartItemsElements = cartItems.map((item,index) => (
+    <CartItem key={index} {...item} />
+  ));
 
-  const cartItemsElements = cartItems.map((item)=> <CartItem key={item.id} {...item}/>)
-  
+  const navigate = useNavigate();
   return (
     <div>
-      <Navbar page={"cart"}/>
+      <Navbar page={"cart"} />
       <SideLinks />
       <img className="absolute -z-20 top-0 right-0" src={background1} alt="" />
       <img
@@ -34,25 +38,46 @@ const Cart = () => {
                 <h1 className="uppercase font-bold text-3xl">your cart</h1>
               </div>
               <div className="w-full grow overflow-y-scroll">
-                {cartItems.length === 0 ? <h1 className="text-center mt-32 font-bold text-4xl">Cart is Empty</h1> : null}
+                {cartItems.length === 0 ? (
+                  <h1 className="text-center mt-32 font-bold text-4xl">
+                    Cart is Empty
+                  </h1>
+                ) : null}
                 {cartItemsElements}
               </div>
               <div className="w-full px-8 py-8 border-y-2 border-black mt-1.5">
                 <div className="flex justify-between py-2">
                   <h1 className="uppercase font-bold text-sm">subtotal:</h1>
-                  <p className="font-bold text-sm">PHP 880.00</p>
+                  <p className="font-bold text-sm">PHP {totalPrice}</p>
                 </div>
                 <div className="flex justify-between py-2">
                   <h1 className="uppercase font-bold text-sm">shipping:</h1>
-                  <p className="font-bold text-sm">PHP 100.00</p>
+                  <p className="font-bold text-sm">PHP {`${cartItems.length === 0 ? 0 : 100}`}</p>
                 </div>
               </div>
               <div className="flex justify-between py-8 px-8 w-full">
-                <h1 className="uppercase font-bold text-sm">estimated total:</h1>
-                <p className="font-bold text-sm">PHP 980.00</p>
+                <h1 className="uppercase font-bold text-sm">
+                  estimated total:
+                </h1>
+                <p className="font-bold text-sm">PHP {`${cartItems.length === 0 ? 0 : totalPrice + 100}`}</p>
               </div>
               <div className="bg-lightYellow 3xl:w-[40%] flex items-center justify-center px-2 absolute left-[14.5rem] -bottom-5 cursor-pointer hover:scale-110 transition-all">
-                <h1 className="uppercase font-bold text-xl"><Link to="/cart/payment">continue to payment</Link></h1>
+                <h1
+                  onClick={() => {
+                    if (cartItems.length === 0) {
+                      alert("Cart Items is Empty");
+                      navigate("/cart")
+                      return;
+                    }
+
+                    if (isLogIn === "false") {
+                      navigate("/login");
+                    }
+                  }}
+                  className="uppercase font-bold text-xl"
+                >
+                  <Link to="/cart/payment">continue to payment</Link>
+                </h1>
               </div>
             </div>
           </div>

@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Navbar, SideLinks } from "../components";
 import background1 from "../assets/background1.png";
 import background2 from "../assets/background2.png";
+import CartContext from "../Context/CartContext";
 
 const Payment = () => {
   const [debitCards, setDebitCards] = useState(false);
@@ -9,6 +10,8 @@ const Payment = () => {
   const [gcash, setGcash] = useState(false);
 
   const [cod, setCod] = useState(false);
+
+  const { totalPrice } = useContext(CartContext)
 
   const debitClick = () => {
     setDebitCards((oldData) => !oldData);
@@ -223,18 +226,18 @@ const Payment = () => {
               <div className="w-1/2 semi-shadow border rounded-md py-2 px-4">
                 <div className="flex justify-between px-2 py-1">
                   <h1 className="font-bold text-sm uppercase">subtotal</h1>
-                  <p className="font-bold text-sm uppercase">php. 1800</p>
+                  <p className="font-bold text-sm uppercase">php. {totalPrice}</p>
                 </div>
                 <div className="flex justify-between px-2 py-1">
                   <h1 className="font-bold text-sm uppercase">shipping</h1>
-                  <p className="font-bold text-sm uppercase">php. 180</p>
+                  <p className="font-bold text-sm uppercase">php. 100</p>
                 </div>
                 <div className="w-full h-0.5 bg-black my-1"></div>
                 <div className="flex justify-between px-2 py-2">
                   <h1 className="font-bold text-sm uppercase">
                     estimated total:
                   </h1>
-                  <p className="font-bold text-sm uppercase">php. 2600</p>
+                  <p className="font-bold text-sm uppercase">php. {totalPrice + 100}</p>
                 </div>
               </div>
 
