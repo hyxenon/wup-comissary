@@ -29,6 +29,13 @@ const Shop = () => {
         return null
   })
 
+  const othersElements = items.map((item)=>{
+    if(item.category === "others"){
+      return <ShopItems key={item.id} {...item} />
+    }
+    return null
+})
+
   return (
     <div className="overflow-hidden relative min-h-[90rem]">
       <Navbar page={'shop'}/>
@@ -65,7 +72,12 @@ const Shop = () => {
                books: true,
                others: false,
             })}  className={`uppercase cursor-pointer hover:scale-125 transition-all ${elements.books ? "font-extrabold" : "font-bold"}`}>Books</li>
-            <li className="font-bold uppercase cursor-pointer hover:scale-125 transition-all">Others</li>
+            <li onClick={()=> setElements({
+               category: false,
+               department: false,
+               books: false,
+               others: true,
+            })}  className="font-bold uppercase cursor-pointer hover:scale-125 transition-all">Others</li>
           </ul>
         </div>
         <div className="flex flex-col items-center gap-12 mb-20">
@@ -74,6 +86,7 @@ const Shop = () => {
               { elements.category ? itemsElements : null}
               { elements.department ? departmentElements : null}
               { elements.books ? booksElements : null}
+              { elements.others ? othersElements : null}
           </div>
         </div>
       </main>
