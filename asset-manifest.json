@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wup-comissary/static/css/main.a4301eee.css",
-    "main.js": "/wup-comissary/static/js/main.cea64b55.js",
+    "main.js": "/wup-comissary/static/js/main.17bc524a.js",
     "static/media/joggingPants.png": "/wup-comissary/static/media/joggingPants.22a73f2c47b2f8533f3d.png",
     "static/media/header1.png": "/wup-comissary/static/media/header1.193a8e49044e12e104c2.png",
     "static/media/book2.png": "/wup-comissary/static/media/book2.403b21f6c24d1f04310b.png",
@@ -21,10 +21,10 @@
     "static/media/shape1.png": "/wup-comissary/static/media/shape1.e05e27493c0048eb867b.png",
     "index.html": "/wup-comissary/index.html",
     "main.a4301eee.css.map": "/wup-comissary/static/css/main.a4301eee.css.map",
-    "main.cea64b55.js.map": "/wup-comissary/static/js/main.cea64b55.js.map"
+    "main.17bc524a.js.map": "/wup-comissary/static/js/main.17bc524a.js.map"
   },
   "entrypoints": [
     "static/css/main.a4301eee.css",
-    "static/js/main.cea64b55.js"
+    "static/js/main.17bc524a.js"
   ]
 }
