@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        lemonMilk: "'lemon/milk', sans-serif",
+        lemonMilk: "'Roboto', sans-serif",
         alex: "'Alex Brush', cursive;"
       },
       screens:{

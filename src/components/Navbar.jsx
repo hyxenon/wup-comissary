@@ -2,12 +2,14 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 
 import logo from "../assets/wesleyanLogo.png";
+import user from '../assets/user.png'
+
 import CartContext from "../Context/CartContext";
 import LogInContext from "../Context/LogInContext";
 const Navbar = ({ page }) => {
   const { cartItems } = useContext(CartContext);
 
-  const { isLogIn, logOut } = useContext(LogInContext);
+  const { isLogIn, userName, logOut } = useContext(LogInContext);
   return (
     <header className="px-12  py-4">
       <nav className="flex items-center">
@@ -18,7 +20,7 @@ const Navbar = ({ page }) => {
             alt="../assets/wesleyanLogo.png"
           />
         </div>
-        <div className="ml-auto 2xl:mr-20 3xl:mr-48">
+        <div className="ml-auto 2xl:mr-20 3xl:mr-48 flex items-center gap-16">
           <ul className="flex gap-10 xl:gap-20 2xl:gap-24 3xl:gap-28">
             <li
               className={`font-bold uppercase cursor-pointer hover:scale-125 transition-all`}
@@ -59,6 +61,7 @@ const Navbar = ({ page }) => {
             >
               <Link to="/login">{`${isLogIn === "false" ? "login" : "logout"}`}</Link>
             </li>
+            </ul>
             <div className="relative">
               <input
                 className="bg-transparent border border-black rounded-full px-3 py-0.5 text-xs"
@@ -67,6 +70,7 @@ const Navbar = ({ page }) => {
               />
               <i className="fa-solid fa-magnifying-glass text-gray-500 absolute top-1.5 right-3"></i>
             </div>
+            
             <div className="relative">
               <Link to="/cart">
                 <i className="fa-solid fa-cart-shopping cursor-pointer text-lg text-gray-500 hover:scale-125 transition-all"></i>
@@ -75,7 +79,13 @@ const Navbar = ({ page }) => {
                 <p className="text-xs font-bold">{cartItems.length}</p>
               </div>
             </div>
-          </ul>
+
+            { isLogIn === "true" && <div className="flex flex-col justify-center items-center">
+              <img className="w-7" src={user} alt="" />
+              <p className="font-bold text-sm mt-2">{userName}</p>
+            </div>}
+            
+            
         </div>
       </nav>
     </header>

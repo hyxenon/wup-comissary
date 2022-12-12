@@ -12,13 +12,13 @@ const About = () => {
         </div>
         <div className='flex justify-center ml-20 px-20 3xl:mt-32 '>
             
-            <div className='w-[40rem] h-64 flex px-4 relative'>
+            <div className='w-[48rem] h-64 flex px-4 relative'>
                 <img className='w-full  absolute -z-20 object-cover' src={shape1} alt="" />
-                <p className='w-[60%] h-[40%] absolute top-14 right-6 text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum maxime ut itaque! Quam inventore obcaecati a temporibus error, Quisquam, voluptatibus asperiores.</p>
+                <p className='w-[60%] h-[40%] absolute top-14 right-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum maxime ut itaque! Quam inventore obcaecati a temporibus error, Quisquam, voluptatibus asperiores.</p>
             </div>
-            <div className='w-[40rem] h-64 flex px-4 relative'>
+            <div className='w-[48rem] h-64 flex px-4 relative'>
                 <img className='w-full flip absolute -z-20 object-cover' src={shape2} alt="" />
-                <p className='w-[60%] h-[40%] absolute top-14 left-16 text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum maxime ut itaque! Quam inventore obcaecati a temporibus error, Quisquam, voluptatibus asperiores.</p>
+                <p className='w-[60%] h-[40%] absolute top-14 left-16'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum maxime ut itaque! Quam inventore obcaecati a temporibus error, Quisquam, voluptatibus asperiores.</p>
             </div>
         </div>
     </div>

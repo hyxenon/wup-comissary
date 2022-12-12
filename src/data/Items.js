@@ -73,13 +73,6 @@ const items = [
     price: 700,
     img: book1,
   },
-  {
-    id: 10,
-    category: "others",
-    title: "PE Uniform Shirt",
-    price: 300,
-    img: uniform1,
-  },
   
 ];
 
