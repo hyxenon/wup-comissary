@@ -9,6 +9,8 @@ export function LogInProvider({children}){
 
     const [userName, setUserName] = useState(localStorage.getItem("username") || "")
 
+    const [modal, setModal] = useState(false)
+
     useEffect(()=>{
         localStorage.setItem("login", isLogIn)
     },[isLogIn])
@@ -35,7 +37,7 @@ export function LogInProvider({children}){
 
 
     return(
-        <LogInContext.Provider value={{isLogIn,userName,formSubmit,handleChange,logOut}}>
+        <LogInContext.Provider value={{isLogIn,userName,modal,setModal,formSubmit,handleChange,logOut}}>
             {children}
         </LogInContext.Provider>
     )

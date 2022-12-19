@@ -16,6 +16,9 @@ module.exports = {
         heading1: "#059142",
         lightYellow: "#FFEB3B",
         lightGreen: "#06c258",
+        lightButton: "#50F698",
+        orange1: "#FDCD14",
+        darkBlue: "#0640B4"
       }
     },
   },
